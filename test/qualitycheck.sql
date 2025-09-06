@@ -1,4 +1,23 @@
---SILVER CHECK FOR silver.crm_cust_info 
+/*
+------------------------------------------------
+Quality Checks
+------------------------------------------------
+Purpose:
+	This script performs quality checks for
+		data consistency,
+		accuracy,
+		standardization
+	while loading data from bronze to silver
+	It includes checks for-
+		-Null or duplicate primary keys
+		-Unwated spaces in string fields
+		-Data Standardization and consistency
+		-Invalid dates ranges
+		-Data Consistency
+		-Derived Columns consistency
+*/
+
+-SILVER CHECK FOR silver.crm_cust_info 
 -- to check for remove duplicates
 select
 cst_id, 
